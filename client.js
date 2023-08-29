@@ -8,7 +8,16 @@ $(function(){
                 // reset the audio
                 toast.currentTime = 0;
             // play audio
-            toast.play();
+            //toast.play();
         $('#liveToast').toast({ autohide: false }).toast('show');
     });
 });
+
+var toastEscape = document.querySelector('#liveToast')
+
+window.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    toastEscape.style.display = 'none'
+  }
+})
+
