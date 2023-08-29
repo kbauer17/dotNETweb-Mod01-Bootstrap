@@ -1,6 +1,6 @@
 $(function(){
     $('.code').on('click', function(e) {
         e.preventDefault();
-        $('#liveToast').toast().toast('show');
+        $('#liveToast').toast({ autohide: false }).toast('show');
     });
 });
