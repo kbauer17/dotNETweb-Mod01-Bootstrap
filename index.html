@@ -15,14 +15,14 @@
     </style>
     <!-- custom css-->
     <link rel="stylesheet" href="client.css"/>
-    
+
 </head>
 <body>
     <!-- toast -->
     <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
         <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
           <div class="toast-header">
-            <strong class="mr-auto">Product Name</strong>
+            <strong class="mr-auto" id="header">Product Name</strong>
             <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -88,7 +88,7 @@
                 <p>Order today! Save 12.5% on Chef Anton's Italian Seasoning.  You don't want to make Chef Anton mad, do you?</p>
             </div>
             <i>Discount expires: 2/25/2024</i><br />
-            <a href="#" class="code"><i class="far fa-hand-point-right"></i> Discount Code</a>
+            <a href="#" class="code" data-header="Chef Anton's Italian Seasoning" data-code="SX34"><i class="far fa-hand-point-right"></i> Discount Code</a>
         </div>
         <div class="card col-md p-3 m-1">
             <h3>Go Green</h3>
@@ -96,7 +96,7 @@
                 <p>Genen Shouyu goes on sale very rarely.  Order now to save 10% off our already low price.</p>
             </div>
             <i>Discount expires: 2/25/2024</i><br />
-            <a href="#" class="code"><i class="far fa-hand-point-right"></i> Discount Code</a>
+            <a href="#" class="code" data-header="Genen Shouyu" data-code="GS56"><i class="far fa-hand-point-right"></i> Discount Code</a>
         </div>
         <div class="card col-md p-3 m-1">
             <h3>Half Price</h3>
@@ -104,7 +104,7 @@
                 <p>Just because you can't pronounce "Schoggi Schokolade" doesn't mean you shouldn't buy it.  Get it now for 50% off!</p>
             </div>
             <i>Discount expires: 2/25/2024</i><br />
-            <a href="#" class="code"><i class="far fa-hand-point-right"></i> Discount Code</a>
+            <a href="#" class="code" data-header="Schoggi Schokolade" data-code="SS78"><i class="far fa-hand-point-right"></i> Discount Code</a>
         </div>
     </div>
     <!--bootstrap js-->
