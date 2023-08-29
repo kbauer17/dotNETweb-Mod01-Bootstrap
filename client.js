@@ -8,7 +8,7 @@ $(function(){
           // reset the audio
           toast.currentTime = 0;
             // play audio
-            //toast.play();
+            toast.play();
         $('#liveToast').toast({ autohide: false }).toast('show');
         $('#header').html($(this).data('header'));
         $('#code').html($(this).data('code'));
