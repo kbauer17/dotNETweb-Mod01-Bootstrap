@@ -15,6 +15,15 @@ $(function(){
     });
 });
 
+// Randomly animate the header
+var attention =['bounce','flash','pulse','rubberBand','shakeX','shakeY','headShake','swing','tada','wobble','jello','heartBeat'];
+var randomNum = Math.floor( (Math.random() * attention.length) );
+var myAnimation = attention[randomNum];
+
+$(function (){
+    $('#heading').addClass('animate__'+ myAnimation);
+});
+
 // Function to display toast if no balloons are selected
 $(document).ready(function(){
     $(".show-toast").click(function(){
@@ -63,3 +72,5 @@ $(document).ready(function(){
         $.fn.selectNoBalloons();
     });
 });
+
+
