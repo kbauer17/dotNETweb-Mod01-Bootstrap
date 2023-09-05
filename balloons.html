@@ -40,7 +40,7 @@
 </head>
 <body>
     <!-- toast -->
-    <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+    <div class="position-fixed bottom-20em right-30em p-3" style="z-index: 5; right: 30em; bottom: 20em;">
         <div class="toast" id="myToast" >
             <div class="toast-header">
                 <strong class="mr-auto">Reminder!!!</strong>
@@ -57,7 +57,7 @@
     
     <!-- content -->
     <div class="container">
-        <h1 class="animate__animated" id="heading">Happy Birthday!</h1><hr />    <!-- animate__heartBeat" -->
+        <h1 class="animate__animated" id="heading">Happy Birthday!</h1><hr />    
         <form role="form">
             <div class="row">
                 <div class="col-sm">
@@ -69,10 +69,13 @@
                         <label for="birthday">Birthday</label>
                         <input type="text" class="form-control" id="birthday" placeholder="Enter birthday" />
                     </div>
-                    <div class="btn-group">
+                    <div class="row">
+                        <div class="col">
                         <button type="button" class="btn btn-outline-primary btn-selectAll">Select All Balloons</button>
+                        </div>
+                        <div class="col">
                         <button type="button" class="btn btn-outline-primary btn-selectNone" >Deselect All Balloons</button>
-                        
+                        </div>
                     </div>
                     <div class="card mt-3">
                         <div class="card-body">
