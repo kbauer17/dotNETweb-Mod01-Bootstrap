@@ -21,3 +21,8 @@ $(document).ready(function(){
         $("#myToast").toast('show');
     }); 
 });
+
+// Function to change heading background color
+function changeHeadingColor(color){
+    document.getElementById("heading").style.color = color;
+}

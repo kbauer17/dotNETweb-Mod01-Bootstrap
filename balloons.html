@@ -55,7 +55,7 @@
     
     <!-- content -->
     <div class="container">
-        <h1 class="animate__animated animate__heartBeat">Happy Birthday!</h1><hr />
+        <h1 class="animate__animated animate__heartBeat" id="heading">Happy Birthday!</h1><hr />
         <form role="form">
             <div class="row">
                 <div class="col-sm">
@@ -72,15 +72,15 @@
                             <h5 class="card-title">Select your favorite balloons</h5>
                             <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input" id="red">
-                                <label class="form-check-label" for="red">Red balloons</label>
+                                <label class="form-check-label" onmouseenter="changeHeadingColor('red');" onmouseout="changeHeadingColor('slategray');" for="red">Red balloons</label>
                             </div>
                             <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input" id="green">
-                                <label class="form-check-label" for="green">Green balloons</label>
+                                <label class="form-check-label" onmouseenter="changeHeadingColor('green');" onmouseout="changeHeadingColor('slategray');" for="green">Green balloons</label>
                             </div>
                             <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input" id="blue">
-                                <label class="form-check-label" for="blue">Blue balloons</label>
+                                <label class="form-check-label" onmouseenter="changeHeadingColor('blue');" onmouseout="changeHeadingColor('slategray');" for="blue">Blue balloons</label>
                             </div>
                         </div>
                     </div>
