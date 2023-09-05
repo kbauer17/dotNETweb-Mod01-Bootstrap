@@ -15,11 +15,19 @@ $(function(){
     });
 });
 
-// Function to display toast
+// Function to display toast if no balloons are selected
 $(document).ready(function(){
     $(".show-toast").click(function(){
-        $("#myToast").toast({ autohide: false });
-        $("#myToast").toast('show');
+        let isChecked = false;
+        $('.form-check-input').each(function () {
+           if ($(this).prop('checked')){
+                isChecked = true;
+           }
+        });
+        if (!isChecked) {
+            $("#myToast").toast({ autohide: false });
+            $("#myToast").toast('show');
+        }
     }); 
 });
 
