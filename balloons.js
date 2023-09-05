@@ -14,3 +14,10 @@ $(function(){
          $('#' + this.id + 'Img').addClass('animate__animated animate__bounceOutUp');
     });
 });
+
+$(document).ready(function(){
+    $(".show-toast").click(function(){
+        $("#myToast").toast({ autohide: false });
+        $("#myToast").toast('show');
+    }); 
+});
